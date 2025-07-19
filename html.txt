@@ -1,0 +1,151 @@
+Great! Here's a **safe, student-friendly version** of your `index.html` that won't be flagged as phishing. It includes:
+
+* Rebranded text and images (no more “Netflix”).
+* Placeholder images instead of real Netflix assets.
+* Slightly adjusted wording to avoid sounding like a phishing site.
+
+---
+
+### ✅ **Rebranded HTML – `index.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix – Watch Shows & Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- This is a student project. Not affiliated with any real company. -->
+    <div class="main">
+        <nav>
+            <span><img width="53" src="assets/images/streamflix-logo.svg" alt="StreamFlix Logo"></span>
+            <div>
+                <button class="btn">Language</button>
+                <button class="btn btn-red-sm">Sign In</button>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <div class="hero">
+            <span>Stream popular movies and series starting at ₹149.</span>
+            <span>Subscribe anytime. Cancel whenever.</span>
+            <span>Ready to start? Enter your email to join us today.</span>
+            <div class="hero-buttons">
+                <input type="text" placeholder="Email Address">
+                <button class="btn btn-red">Join Now &gt;</button>
+            </div>
+        </div>
+        <div class="separation"></div>
+    </div>
+
+    <section class="first">
+        <div>
+            <span>Enjoy on your TV</span>
+            <span>Watch on smart TVs, game consoles, laptops, and more.</span>
+        </div>
+        <div class="secImg">
+            <img src="https://via.placeholder.com/300x200" alt="TV watching">
+            <video src="assets/videos/sample-tv-video.mp4" autoplay loop muted></video>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="first second">
+        <div class="secImg">
+            <img src="https://via.placeholder.com/300x200" alt="Mobile device">
+        </div>
+        <div>
+            <span>Download your favorites</span>
+            <span>Watch anywhere, even offline.</span>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="first third">
+        <div>
+            <span>Available on all devices</span>
+            <span>Stream on phones, tablets, and smart TVs.</span>
+        </div>
+        <div class="secImg">
+            <img src="https://via.placeholder.com/300x200" alt="Multi-device">
+            <video src="assets/videos/sample-device-video.mp4" autoplay loop muted></video>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="first second">
+        <div class="secImg">
+            <img src="https://via.placeholder.com/300x200" alt="Kids content">
+        </div>
+        <div>
+            <span>Kid-friendly content</span>
+            <span>Safe viewing space with fun shows and characters.</span>
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox"><span>What is StreamFlix?</span></div>
+        <div class="faqbox"><span>How much does StreamFlix cost?</span></div>
+        <div class="faqbox"><span>What can I watch?</span></div>
+        <div class="faqbox"><span>Where can I watch?</span></div>
+    </section>
+
+    <div class="separation"></div>
+
+    <footer>
+        <div class="questions">Questions? Contact us at 000-800-000-0000</div>
+        <div class="footer">
+            <div class="footer-item">
+                <a href="#">Investor Info</a>
+                <a href="#">Careers</a>
+                <a href="#">Watch Options</a>
+                <a href="#">Terms</a>
+            </div>
+            <div class="footer-item">
+                <a href="#">Support</a>
+                <a href="#">Account</a>
+                <a href="#">Test Speed</a>
+                <a href="#">Legal</a>
+            </div>
+            <div class="footer-item">
+                <a href="#">Media</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookies</a>
+                <a href="#">Corporate</a>
+            </div>
+            <div class="footer-item">
+                <a href="#">Contact</a>
+                <a href="#">Test Speed</a>
+                <a href="#">Legal</a>
+                <a href="#">Originals</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+```
+
+---
+
+### ✅ Replace these assets:
+
+You'll need to replace:
+
+* `assets/images/streamflix-logo.svg` → with your own fictional logo.
+* `assets/videos/sample-tv-video.mp4`, etc. → with your own placeholder video files (or just remove the `<video>` tags if not needed).
+
+---
+
+### Need help with `style.css`?
+
+If your antivirus also flags your CSS due to class names or patterns, I can help you **clean or rebuild the CSS file** too.
+
+Let me know if you’d like the CSS adjusted for this new branding as well.

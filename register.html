@@ -1,0 +1,71 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #121212;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: #222;
+      padding: 80px;
+      border-radius: 8px;
+    }
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px;
+      background: red;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <form id="regForm">
+    <h2>Register</h2>
+    <input type="text" placeholder="Name" id="name" required>
+    <input type="email" placeholder="Email" id="email" required>
+    <input type="password" placeholder="Password" id="password" required>
+    <button type="submit">Register</button>
+  </form>
+
+  
+
+    <script>
+  const form = document.getElementById("regForm");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const user = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value
+    };
+
+    localStorage.setItem("streamflixUser", JSON.stringify(user));
+    alert("Registration successful!");
+
+    // ✅ Redirect back to main.html after registration
+    window.location.href = "index.html"; // or "index.html" if that's the filename
+  });
+</script>
+
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Movie Coach</title>
+  <style>
+    body { background: #141414; color: white; font-family: Arial; padding: 20px; }
+    h1 { color: #e50914; }
+    textarea, input, button {
+      width: 100%; margin-top: 10px; padding: 10px; font-size: 16px;
+    }
+    #response { margin-top: 20px; background: #222; padding: 15px; border-radius: 5px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+
+  <h1>🎭 AI Movie Coach</h1>
+  <label for="input">Paste your script or idea:</label>
+  <textarea id="input" rows="8" placeholder="INT. COFFEE SHOP – DAY..."></textarea>
+
+  <label for="prompt">What do you want feedback on?</label>
+  <input id="prompt" placeholder="e.g. 'Make this scene funnier'" />
+
+  <button onclick="askCoach()">Ask the Coach</button>
+
+  <div id="response">🧠 Feedback will appear here...</div>
+
+  <script src="coach.js" defer></script>
+</body>
+</html>

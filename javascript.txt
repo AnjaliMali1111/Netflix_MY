@@ -1,0 +1,112 @@
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("JavaScript is connected!");
+
+    // FAQ Accordion
+    const faqs = document.querySelectorAll('.faqbox');
+    faqs.forEach((faq) => {
+        faq.addEventListener('click', () => {
+            const isOpen = faq.classList.contains('open');
+
+            faqs.forEach(f => {
+                f.classList.remove('open');
+                f.querySelector('p')?.remove();
+            });
+
+            if (!isOpen) {
+                faq.classList.add('open');
+                const answer = document.createElement('p');
+                answer.textContent = 'This is a sample answer. Replace with real content.';
+                answer.style.marginTop = '10px';
+                answer.style.fontSize = '18px';
+                faq.appendChild(answer);
+            }
+        });
+    });
+
+    // Email validation
+    const joinBtn = document.querySelector('.btn-red');
+    const emailInput = document.querySelector('input[type="text"]');
+
+    if (joinBtn && emailInput) {
+        joinBtn.addEventListener('click', () => {
+            const email = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+            } else {
+                alert(`Thanks for joining StreamFlix with ${email}!`);
+            }
+        });
+    }
+
+    // Sign In alert
+    const signInBtn = document.querySelector('.btn-red-sm');
+    if (signInBtn) {
+        signInBtn.addEventListener('click', () => {
+            alert('Sign In functionality coming soon!');
+        });
+    }
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const faqs = document.querySelectorAll('.faqbox');
+
+    faqs.forEach((faq) => {
+        faq.addEventListener('click', () => {
+            const isOpen = faq.classList.contains('open');
+
+            // Close all other FAQs
+            faqs.forEach(f => {
+                f.classList.remove('open');
+                f.querySelector('.answer')?.remove();
+            });
+
+            if (!isOpen) {
+                faq.classList.add('open');
+                const answer = document.createElement('div');
+                answer.classList.add('answer');
+                answer.innerText = "This is the answer to your question. (Customize this text)";
+                faq.appendChild(answer);
+            }
+        });
+    });
+});
+
+
+const signInBtn = document.querySelector('.btn-red-sm');
+
+signInBtn?.addEventListener('click', () => {
+    // Open the form in a new popup window
+    window.open('register.html', 'Register', 'width=400,height=500');
+});
+
+
+
+
+
+
+
+
+
+
+
+in the rgrestion form
+<script>
+    const form = document.getElementById("regForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const user = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value
+      };
+
+      localStorage.setItem("streamflixUser", JSON.stringify(user));
+      alert("Registration successful!");
+    });
